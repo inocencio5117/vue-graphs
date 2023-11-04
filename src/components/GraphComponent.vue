@@ -36,6 +36,7 @@
     </div>
 
     <div class="graph-container">
+      <h3>Sales by month:</h3>
       <Bar class="graph" :data="chartData" />
     </div>
 
@@ -162,10 +163,15 @@ export default {
   }
 
   .graph-container {
-    width: 75%;
+    h3 {
+      margin-top: 1rem;
+    }
+
+    width: 70%;
     height: 90%;
     margin: 1rem auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
